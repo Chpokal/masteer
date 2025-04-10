@@ -25,7 +25,7 @@ namespace masteer
         public List<Hotel> CurrentHotels {  get; set; }
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();//dhkdihin  gfgnhmjkl;'
             var client = new WebClient();
             var response = client.DownloadString("http://127.0.0.1:34550/api/hotels");
             CurrentHotels = JsonConvert.DeserializeObject<List<Hotel>>(response);
